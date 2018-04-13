@@ -1,0 +1,7 @@
+INFO: [SDx-EM 01] Hardware emulation runs detailed simulation underneath. It may take long time for large data set. Please use a small dataset for faster execution. You can still get performance trend for your kernel with smaller dataset.
+INFO: [SDx-EM 22] [Wall clock time: 08:14, Emulation time: 0.007938 ms] Data transfer between kernel(s) and global memory(s)
+BANK0          RD = 2.000 KB               WR = 1.000 KB        
+BANK1          RD = 0.000 KB               WR = 0.000 KB        
+BANK2          RD = 0.000 KB               WR = 0.000 KB        
+BANK3          RD = 0.000 KB               WR = 0.000 KB        
+

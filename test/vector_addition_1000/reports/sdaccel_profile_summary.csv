@@ -1,0 +1,83 @@
+SDAccel Profile Summary
+Generated on: 2018-04-02 14:18:02
+Msec since Epoch: 1522678682454
+Profiled application: host
+Target platform: Xilinx
+Target devices: xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0
+Flow mode: System Run
+Tool version: 2017.1
+
+OpenCL API Calls
+API Name,Number Of Calls,Total Time (ms),Minimum Time (ms),Average Time (ms),Maximum Time (ms),
+clCreateProgramWithBinary,1,5411.55,5411.55,5411.55,5411.55,
+clFinish,1,140.521,140.521,140.521,140.521,
+clEnqueueTask,1,0.137106,0.137106,0.137106,0.137106,
+clEnqueueMigrateMemObjects,2,0.096361,0.030913,0.0481805,0.065448,
+clReleaseProgram,1,0.07531,0.07531,0.07531,0.07531,
+clGetPlatformInfo,14,0.071116,0.004687,0.00507971,0.007864,
+clCreateBuffer,3,0.054971,0.007291,0.0183237,0.039199,
+clSetKernelArg,4,0.049103,0.00633,0.0122758,0.028652,
+clReleaseKernel,1,0.040271,0.040271,0.040271,0.040271,
+clGetExtensionFunctionAddress,2,0.039961,0.00656,0.0199805,0.033401,
+clReleaseMemObject,6,0.03825,0.005512,0.006375,0.009968,
+clCreateKernel,1,0.024704,0.024704,0.024704,0.024704,
+clRetainMemObject,3,0.022616,0.006217,0.00753867,0.009819,
+clCreateContext,1,0.021413,0.021413,0.021413,0.021413,
+clGetDeviceIDs,2,0.016534,0.005074,0.008267,0.01146,
+clReleaseDevice,2,0.011785,0.005697,0.0058925,0.006088,
+clGetDeviceInfo,2,0.011555,0.005196,0.0057775,0.006359,
+clRetainDevice,2,0.011507,0.005135,0.0057535,0.006372,
+clCreateCommandQueue,1,0.009645,0.009645,0.009645,0.009645,
+clReleaseCommandQueue,1,0.007712,0.007712,0.007712,0.007712,
+clReleaseContext,1,0.0073,0.0073,0.0073,0.0073,
+
+
+Kernel Execution
+Kernel,Number Of Enqueues,Total Time (ms),Minimum Time (ms),Average Time (ms),Maximum Time (ms),
+krnl_vadd,1,138.407,138.407,138.407,138.407,
+
+
+Compute Unit Utilization
+Device,Compute Unit,Kernel,Global Work Size,Local Work Size,Number Of Calls,Total Time (ms),Minimum Time (ms),Average Time (ms),Maximum Time (ms),
+xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0,krnl_vadd_1,krnl_vadd,1:1:1,1:1:1,1,138.359,138.359,138.359,138.359,
+
+
+Data Transfer: Host and Global Memory
+Context:Number of Devices,Transfer Type,Number Of Transfers,Transfer Rate (MB/s),Average Bandwidth Utilization (%),Average Size (KB),Total Time (ms),Average Time (ms),
+context0:1,READ,1,6794.382028,70.774813,4096,0.602851,0.602851,
+context0:1,WRITE,1,5543.153982,57.741187,8192,1.477859,1.477859,
+
+
+Data Transfer: Kernels and Global Memory
+Device,Transfer Type,Number Of Transfers,Transfer Rate (MB/s),Average Bandwidth Utilization (%),Average Size (KB),Average Time (ns),Device Execution Time (ms),
+xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0,READ,1088000,59.1878,0.513783,0.00752941,3497.32,138.407,
+xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0,WRITE,1024000,29.5939,0.256891,0.004,109.761,138.407,
+
+
+Top Data Transfer: Kernels and Global Memory
+Device,Kernel Name,Number of Transfers,Average Bytes per Transfer,Transfer Efficiency (%),Total Data Transfer (MB),Total Write (MB),Total Read (MB),Transfer Rate (MB/s),Average Bandwidth Utilization (%),
+xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0,ALL,2112000,5.81818,0.142045,12.288,4.096,8.192,88.7817,0.770674,
+
+
+Top Kernel Execution
+Kernel Instance Address,Kernel,Context ID,Command Queue ID,Device,Start Time (ms),Duration (ms),Global Work Size,Local Work Size,
+33536400,krnl_vadd,0,0,xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0,5414.6,138.407,1:1:1,1:1:1,
+
+
+Top Buffer Writes
+Buffer Address,Context ID,Command Queue ID,Start Time (ms),Duration (ms),Buffer Size (KB),Writing Rate(MB/s),
+33536592,0,0,5413.01,1.477859,8192,5543.153982,
+
+
+Top Buffer Reads
+Buffer Address,Context ID,Command Queue ID,Start Time (ms),Duration (ms),Buffer Size (KB),Reading Rate(MB/s),
+33542752,0,0,5553.06,0.602851,4096,6794.382028,
+
+
+PRC Parameters
+Parameter,Element,Value,
+DEVICE_EXEC_TIME,xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0,138.406975,
+CU_CALLS,xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|krnl_vadd_1,1,
+MEMORY_BIT_WIDTH,xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0,512,
+
+

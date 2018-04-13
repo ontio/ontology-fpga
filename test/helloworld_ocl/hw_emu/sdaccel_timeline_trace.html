@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<HTML>
+<BODY>
+<STYLE>
+	h1 {
+		font-size:200%;
+	}
+	table th,tr,td {
+		border-collapse: collapse; /* share common border between cells */
+		padding: 4px; /* padding within cells */
+		table-layout : fixed
+	}
+	table th {
+	background-color:lightsteelblue
+	}
+</STYLE>
+<h1>SDAccel Timeline Trace</h1>
+<br>
+<h3>Generated on: 2018-03-21 08:14:19</h3>
+<h3>Profiled application: helloworld</h3>
+<h3>Target platform: Xilinx</h3>
+<br>
+<h2></h2>
+
+<TABLE border="1">
+<TR>
+<TH>Time (msec)</TH>
+<TH>Name</TH>
+<TH>Event</TH>
+<TH>Address/Port</TH>
+<TH>Size (Bytes or Num)</TH>
+<TH>Latency (cycles)</TH>
+<TH>Start (cycles)</TH>
+<TH>End (cycles)</TH>
+<TH>Latency (usec)</TH>
+<TH>Start (msec)</TH>
+<TH>End (msec)</TH>
+</TR>
+<TR><TD>0.288481</TD><TD>clGetExtensionFunctionAddress|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.326279</TD><TD>clGetExtensionFunctionAddress|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.338826</TD><TD>clGetPlatformInfo|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.347772</TD><TD>clGetPlatformInfo|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.353404</TD><TD>clGetPlatformInfo|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.358904</TD><TD>clGetPlatformInfo|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.401701</TD><TD>clGetPlatformInfo|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.409335</TD><TD>clGetPlatformInfo|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.418269</TD><TD>clGetPlatformInfo|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.423278</TD><TD>clGetPlatformInfo|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.50022</TD><TD>clGetDeviceIDs|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.512141</TD><TD>clGetDeviceIDs|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.518369</TD><TD>clGetDeviceIDs|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.523406</TD><TD>clGetDeviceIDs|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.531095</TD><TD>clRetainDevice|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.537512</TD><TD>clRetainDevice|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.54381</TD><TD>clRetainDevice|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.549045</TD><TD>clRetainDevice|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.555862</TD><TD>clCreateContext|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.567757</TD><TD>clCreateContext|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.574235</TD><TD>clCreateCommandQueue|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.587415</TD><TD>clCreateCommandQueue|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.594017</TD><TD>clGetDeviceInfo|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.600161</TD><TD>clGetDeviceInfo|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.60579</TD><TD>clGetDeviceInfo|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>0.611191</TD><TD>clGetDeviceInfo|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>3.050016</TD><TD>clCreateProgramWithBinary|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4504.267456</TD><TD>clCreateProgramWithBinary|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4504.314784</TD><TD>clCreateBuffer|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4504.646184</TD><TD>clCreateBuffer|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4504.655168</TD><TD>clCreateBuffer|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4505.043603</TD><TD>clCreateBuffer|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4505.052999</TD><TD>clCreateBuffer|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4505.53924</TD><TD>clCreateBuffer|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4505.555236</TD><TD>clRetainMemObject|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4505.564587</TD><TD>clRetainMemObject|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4505.572326</TD><TD>clRetainMemObject|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4505.578806</TD><TD>clRetainMemObject|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4505.58589</TD><TD>clRetainMemObject|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4505.592238</TD><TD>clRetainMemObject|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4505.603836</TD><TD>clEnqueueMigrateMemObjects|21770256</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4505.644057</TD><TD>WRITE_BUFFER</TD><TD>QUEUE</TD><TD>0X149CCB0</TD><TD>2048</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.014564</TD><TD>clEnqueueMigrateMemObjects|21770256</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.027801</TD><TD>clCreateKernel|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.046324</TD><TD>clCreateKernel|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.055694</TD><TD>clSetKernelArg|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.067753</TD><TD>clSetKernelArg|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.073911</TD><TD>clSetKernelArg|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.080348</TD><TD>clSetKernelArg|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.086342</TD><TD>clSetKernelArg|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.092637</TD><TD>clSetKernelArg|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.098477</TD><TD>clSetKernelArg|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.104604</TD><TD>clSetKernelArg|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.112731</TD><TD>clEnqueueTask|21770256</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.137948</TD><TD>KERNEL|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0|vector_add|1:1:1|all</TD><TD>QUEUE</TD><TD>0X14A0C20</TD><TD>1</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.867976</TD><TD>clEnqueueTask|21770256</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.882133</TD><TD>clEnqueueMigrateMemObjects|21770256</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.024483</TD><TD>WRITE_BUFFER</TD><TD>SUBMIT</TD><TD>0X149CCB0</TD><TD>2048</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.895589</TD><TD>READ_BUFFER</TD><TD>QUEUE</TD><TD>0X14A4480</TD><TD>1024</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4507.250916</TD><TD>clEnqueueMigrateMemObjects|21770256</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4507.263682</TD><TD>clFinish|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4506.97118</TD><TD>WRITE_BUFFER</TD><TD>START</TD><TD>0X149CCB0</TD><TD>2048</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4518.469775</TD><TD>KERNEL|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0|vector_add|1:1:1|all</TD><TD>SUBMIT</TD><TD>0X14A0C20</TD><TD>1</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4518.451556</TD><TD>WRITE_BUFFER</TD><TD>END</TD><TD>0X149CCB0</TD><TD>2048</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4519.598625</TD><TD>KERNEL|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0|vector_add|1:1:1|vector_add_1</TD><TD>START</TD><TD>0X14A0C20</TD><TD>1</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5274.379162</TD><TD>KERNEL|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0|vector_add|1:1:1|vector_add_1</TD><TD>END</TD><TD>0X14A0C20</TD><TD>1</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5274.497885</TD><TD>READ_BUFFER</TD><TD>SUBMIT</TD><TD>0X14A4480</TD><TD>1024</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5275.273772</TD><TD>READ_BUFFER</TD><TD>START</TD><TD>0X14A4480</TD><TD>1024</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5279.782589</TD><TD>clFinish|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5279.890787</TD><TD>clReleaseKernel|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5279.901495</TD><TD>clReleaseKernel|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5279.910512</TD><TD>clReleaseMemObject|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5279.917511</TD><TD>clReleaseMemObject|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5279.924549</TD><TD>clReleaseMemObject|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5279.930655</TD><TD>clReleaseMemObject|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5279.936644</TD><TD>clReleaseMemObject|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5279.942409</TD><TD>clReleaseMemObject|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5279.948456</TD><TD>clReleaseMemObject|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5279.976218</TD><TD>clReleaseMemObject|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5279.982649</TD><TD>clReleaseMemObject|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5279.989726</TD><TD>clReleaseMemObject|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5279.995706</TD><TD>clReleaseMemObject|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5280.002432</TD><TD>clReleaseMemObject|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5280.009724</TD><TD>clReleaseProgram|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>5279.754514</TD><TD>READ_BUFFER</TD><TD>END</TD><TD>0X14A4480</TD><TD>1024</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>4519.598665</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>773</TD><TD>774</TD><TD>0.004</TD><TD>4519.598665</TD><TD>4519.598669</TD></TR>
+<TR><TD>4796.389588</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>776</TD><TD>777</TD><TD>0.004</TD><TD>4796.389588</TD><TD>4796.389592</TD></TR>
+<TR><TD>4802.839947</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>790</TD><TD>791</TD><TD>0.004</TD><TD>4802.839947</TD><TD>4802.839952</TD></TR>
+<TR><TD>4805.621023</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>806</TD><TD>807</TD><TD>0.004</TD><TD>4805.621023</TD><TD>4805.621027</TD></TR>
+<TR><TD>4814.678754</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>822</TD><TD>823</TD><TD>0.004</TD><TD>4814.678754</TD><TD>4814.678759</TD></TR>
+<TR><TD>4814.678818</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>838</TD><TD>839</TD><TD>0.004</TD><TD>4814.678818</TD><TD>4814.678823</TD></TR>
+<TR><TD>4824.60244</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>854</TD><TD>855</TD><TD>0.004</TD><TD>4824.60244</TD><TD>4824.602443</TD></TR>
+<TR><TD>4834.441633</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>870</TD><TD>871</TD><TD>0.004</TD><TD>4834.441633</TD><TD>4834.441638</TD></TR>
+<TR><TD>4834.441698</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>886</TD><TD>887</TD><TD>0.004</TD><TD>4834.441698</TD><TD>4834.441701</TD></TR>
+<TR><TD>4834.441762</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>902</TD><TD>903</TD><TD>0.004</TD><TD>4834.441762</TD><TD>4834.441765</TD></TR>
+<TR><TD>4853.353966</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>918</TD><TD>919</TD><TD>0.004</TD><TD>4853.353966</TD><TD>4853.35397</TD></TR>
+<TR><TD>4853.35403</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>934</TD><TD>935</TD><TD>0.004</TD><TD>4853.35403</TD><TD>4853.354034</TD></TR>
+<TR><TD>4853.354094</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>950</TD><TD>951</TD><TD>0.004</TD><TD>4853.354094</TD><TD>4853.354098</TD></TR>
+<TR><TD>4872.516916</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>966</TD><TD>967</TD><TD>0.004</TD><TD>4872.516916</TD><TD>4872.51692</TD></TR>
+<TR><TD>4872.51698</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>982</TD><TD>983</TD><TD>0.004</TD><TD>4872.51698</TD><TD>4872.516984</TD></TR>
+<TR><TD>4872.517044</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>998</TD><TD>999</TD><TD>0.004</TD><TD>4872.517044</TD><TD>4872.517048</TD></TR>
+<TR><TD>4951.401917</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1166</TD><TD>1167</TD><TD>0.004</TD><TD>4951.401917</TD><TD>4951.401921</TD></TR>
+<TR><TD>4953.995803</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1169</TD><TD>1170</TD><TD>0.004</TD><TD>4953.995803</TD><TD>4953.995807</TD></TR>
+<TR><TD>4960.517865</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1183</TD><TD>1184</TD><TD>0.004</TD><TD>4960.517865</TD><TD>4960.517869</TD></TR>
+<TR><TD>4965.36103</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1199</TD><TD>1200</TD><TD>0.004</TD><TD>4965.36103</TD><TD>4965.361034</TD></TR>
+<TR><TD>4965.361094</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1215</TD><TD>1216</TD><TD>0.004</TD><TD>4965.361094</TD><TD>4965.361098</TD></TR>
+<TR><TD>4974.760256</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1231</TD><TD>1232</TD><TD>0.004</TD><TD>4974.760256</TD><TD>4974.76026</TD></TR>
+<TR><TD>4984.74891</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1247</TD><TD>1248</TD><TD>0.004</TD><TD>4984.74891</TD><TD>4984.748913</TD></TR>
+<TR><TD>4984.748973</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1263</TD><TD>1264</TD><TD>0.004</TD><TD>4984.748973</TD><TD>4984.748978</TD></TR>
+<TR><TD>4997.527122</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1279</TD><TD>1280</TD><TD>0.004</TD><TD>4997.527122</TD><TD>4997.527126</TD></TR>
+<TR><TD>4997.527186</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1295</TD><TD>1296</TD><TD>0.004</TD><TD>4997.527186</TD><TD>4997.52719</TD></TR>
+<TR><TD>4997.52725</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1311</TD><TD>1312</TD><TD>0.004</TD><TD>4997.52725</TD><TD>4997.527254</TD></TR>
+<TR><TD>5017.219202</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1327</TD><TD>1328</TD><TD>0.004</TD><TD>5017.219202</TD><TD>5017.219205</TD></TR>
+<TR><TD>5017.219265</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1343</TD><TD>1344</TD><TD>0.004</TD><TD>5017.219265</TD><TD>5017.21927</TD></TR>
+<TR><TD>5017.219329</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1359</TD><TD>1360</TD><TD>0.004</TD><TD>5017.219329</TD><TD>5017.219334</TD></TR>
+<TR><TD>5036.532965</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1375</TD><TD>1376</TD><TD>0.004</TD><TD>5036.532965</TD><TD>5036.532968</TD></TR>
+<TR><TD>5036.533029</TD><TD>Kernel_Read|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Read</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1391</TD><TD>1392</TD><TD>0.004</TD><TD>5036.533029</TD><TD>5036.533033</TD></TR>
+<TR><TD>5109.782799</TD><TD>Kernel_Write|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Write</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1567</TD><TD>1568</TD><TD>0.004</TD><TD>5109.782799</TD><TD>5109.782804</TD></TR>
+<TR><TD>5119.825562</TD><TD>Kernel_Write|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Write</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1585</TD><TD>1586</TD><TD>0.004</TD><TD>5119.825562</TD><TD>5119.825566</TD></TR>
+<TR><TD>5127.548296</TD><TD>Kernel_Write|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Write</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1603</TD><TD>1604</TD><TD>0.004</TD><TD>5127.548296</TD><TD>5127.5483</TD></TR>
+<TR><TD>5135.259652</TD><TD>Kernel_Write|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Write</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1621</TD><TD>1622</TD><TD>0.004</TD><TD>5135.259652</TD><TD>5135.259657</TD></TR>
+<TR><TD>5142.956922</TD><TD>Kernel_Write|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Write</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1639</TD><TD>1640</TD><TD>0.004</TD><TD>5142.956922</TD><TD>5142.956925</TD></TR>
+<TR><TD>5150.74268</TD><TD>Kernel_Write|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Write</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1657</TD><TD>1658</TD><TD>0.004</TD><TD>5150.74268</TD><TD>5150.742684</TD></TR>
+<TR><TD>5158.442499</TD><TD>Kernel_Write|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Write</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1675</TD><TD>1676</TD><TD>0.004</TD><TD>5158.442499</TD><TD>5158.442504</TD></TR>
+<TR><TD>5166.095489</TD><TD>Kernel_Write|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Write</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1693</TD><TD>1694</TD><TD>0.004</TD><TD>5166.095489</TD><TD>5166.095492</TD></TR>
+<TR><TD>5173.834999</TD><TD>Kernel_Write|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Write</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1711</TD><TD>1712</TD><TD>0.004</TD><TD>5173.834999</TD><TD>5173.835002</TD></TR>
+<TR><TD>5181.560792</TD><TD>Kernel_Write|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Write</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1729</TD><TD>1730</TD><TD>0.004</TD><TD>5181.560792</TD><TD>5181.560796</TD></TR>
+<TR><TD>5189.287673</TD><TD>Kernel_Write|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Write</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1747</TD><TD>1748</TD><TD>0.004</TD><TD>5189.287673</TD><TD>5189.287677</TD></TR>
+<TR><TD>5196.987295</TD><TD>Kernel_Write|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Write</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1765</TD><TD>1766</TD><TD>0.004</TD><TD>5196.987295</TD><TD>5196.987299</TD></TR>
+<TR><TD>5204.727909</TD><TD>Kernel_Write|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Write</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1783</TD><TD>1784</TD><TD>0.004</TD><TD>5204.727909</TD><TD>5204.727913</TD></TR>
+<TR><TD>5212.486518</TD><TD>Kernel_Write|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Write</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1801</TD><TD>1802</TD><TD>0.004</TD><TD>5212.486518</TD><TD>5212.486522</TD></TR>
+<TR><TD>5220.327591</TD><TD>Kernel_Write|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Write</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1819</TD><TD>1820</TD><TD>0.004</TD><TD>5220.327591</TD><TD>5220.327594</TD></TR>
+<TR><TD>5228.255192</TD><TD>Kernel_Write|xilinx:aws-vu9p-f1:4ddr-xpr-2pr:4.0-0|vector_addition.hw_emu.xilinx_aws-vu9p-f1_4ddr-xpr-2pr_4_0</TD><TD>Write</TD><TD>OCL Region</TD><TD>1</TD><TD>1</TD><TD>1837</TD><TD>1838</TD><TD>0.004</TD><TD>5228.255192</TD><TD>5228.255196</TD></TR>
+<TR><TD>14505.69079</TD><TD>clReleaseProgram|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>14505.72991</TD><TD>clReleaseCommandQueue|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>14505.74195</TD><TD>clReleaseCommandQueue|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>14505.74941</TD><TD>clReleaseContext|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>14505.75799</TD><TD>clReleaseContext|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>14505.76523</TD><TD>clReleaseDevice|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>14505.77207</TD><TD>clReleaseDevice|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>14505.77837</TD><TD>clReleaseDevice|General</TD><TD>START</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+<TR><TD>14505.78437</TD><TD>clReleaseDevice|General</TD><TD>END</TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR>
+</TABLE>
+</BODY>
+</HTML>
