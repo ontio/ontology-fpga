@@ -195,10 +195,121 @@ a * b ≡ 1 * t * 2^-l mod p
 Since, MM is complete for the whole calculation.
 
 
-## The Double-Base Number System
+## Fast Multi-Scalar
+
+The step 4 of ECDSA Verification is the slowest because of the scalar multiplication
+of the points which involves plenty of prime field operations. There are several
+techniques to accelerate this.
+
+The basic is to calculate the target point with Jacobian projective coordinates.
+This avoids the inversion operation of Fp.
+
+### Shamir's Trick
+
+Shamir's trick is a technique to calculate [m]P + [n]Q simultaneously. The general
+idea is to represent m and n in binary. For example 145 and 207 has the following
+representation:
+
+    145 = (1 0 0 1 0 0 0 1)
+    207 = (1 1 0 0 1 1 1 1)
+
+Traverse the two from left to right simultaneously. For each 1 do an addition
+to the result and doubling it before going to the next bit.
+
+Obviously this needs l doublings, while the number of additions depends on the
+so called Hamming Weight, i.e. the number of non-zero columns.
+
+Signed binary representation is a better form which can reduce the Hamming Weight.
+It uses {-1, 0, 1} as the bit values. Following is a representation of 145 and
+207 with the Hamming Weight 5:
+
+    145 = (0  1  0  0  1  0  0  0  1)
+    207 = (1  0 -1  0  1  0  0  0 -1)
+
+With pre-compiled P+Q and P-Q, it only needs 5 additions.
+
+### Joint Sparse Form
+
+An further impoved method is the Joint Sparse Form (JSF) which generates signed
+binary representations from right to left with lower Hamming Weight.
 
 TODO
 
+### Double-base Chains
+
+Traditional representations of integers are single based such as bases 2, 8, 10
+and 16. Double-base number system use two bases to represent integers. For example
+
+    n = SUM_i(c_i * 2^a_i * 3^b_i)
+
+This uses 2 and 3 as the double base. 
+
+For all `a_i` and `b_i`, if `a_i >= a_i+1` and `b_i >= b_i+1`, we call the
+representation as a Joint Double-Base Chain (JDBC)
+
+Let `v_p(x)` denote the largest exponent of p that satisfies `p^v_p(x)` devids
+x. And denote `v_p(x, y) = min(v_p(x), v_p(y))`. To generate a JDBC of m and n,
+we can use the following algorithm:
+
+```
+i = 0
+a_i = v_2(m, n)
+b_i = v_3(m, n)
+x = m / (2^a_i * 3^b_i)
+y = n / (2^a_i * 3^b_i)
+
+while x > 1 or y > 1:
+    find the largest g = 2^v_2(x - c_i, y - d_i) * 3^v_3(x - c_i, y - d_i), where c_i, d_i in {-1, 0, 1}
+    x = (x - c_i) / g
+    y = (y - d_i) / g
+    a_i = a_i-1 + v_2(g)
+    b_i = b_i-1 + v_3(g)
+
+c_i = x
+d_i = y
+
+inverse the sequences [a_i], [b_i], [c_i] and [d_i]
+```
+
+The JDBC for m and n are then
+
+    m = SUM_i(c_i * 2^a_i * 3^b_i) for m
+    n = SUM_i(d_i * 2^a_i * 3^b_i) for n
+
+For example, the JDBC of 542788 and 462444 have  the following representations:
+
+            a_i  11   9   7   7   5   5   5   4   2
+            b_i   5   4   4   3   3   2   1   0   0
+    542788  c_i   1   1   0   1   0   1  -1   0   1
+    462444  d_i   1  -1   1  -1  -1   1  -1   1  -1
+
+JDBC can further reduce the Hamming Weight, while involves the tripling operation
+in the multi-scalar. Following is an algorithm for calculate [m]P + [n]Q with
+JDBC:
+
+```
+Pre-compute P+Q and P-Q
+let l be the length of the JDBC
+result = 0
+for i <- 0 to l-1:
+    if c_i == 1 and d_i == 1:
+        result = result + (P+Q)
+    else if c_i == -1 and d_i == -1:
+        result = result - (P+Q)
+    else if c_i == 1 and d_i == -1:
+        result = result + (P-Q)
+    else if c_i == -1 and d_i == 1:
+        result = result - (P-Q)
+    else if c_i != 0:
+        result = result + c_i * P
+    else if d_i != 0:
+        result = result + d_i * Q
+
+    for j <- 1 to a_i - a_i+1:
+        result = double(result)
+    for k <- 1 to b_i - b_i+1:
+        result = triple(result)
+```
 
 # Further Reading
 
@@ -209,3 +320,7 @@ TODO
 [3] http://www.hackersdelight.org/MontgomeryMultiplication.pdf
 
 [4] http://web.science.mq.edu.au/~doche/asilomar.pdf
+
+[5] http://www.ijana.in/papers/V4I2-8.pdf
+
+[6] https://www.iacr.org/archive/eurocrypt2009/54790501/54790501.pdf
